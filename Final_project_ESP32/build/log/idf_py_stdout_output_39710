@@ -1,0 +1,1365 @@
+        v5.1.2[0m
+[0;32mI (353) cpu_start: Min chip rev:     v0.0[0m
+ RAM available for dynamic allocation:[0m
+[0;32mI (374) heap_init: At 3FC9EF48 len 0004A7C8 (297 KiB): DRAM[0m
+[0;32mI (380) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (387)�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1750
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+entry 0x403c9908
+[0;32mI (27) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 22 2024 19:08:52[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (72) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (79) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  3 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (94) boot:  4 ota_0            OTA app          00 10 00210000 00100000[0m
+[0;32mI (102) boot:  5 ota_1            OTA app          00 11 00310000 00100000[0m
+[0;32mI (109) boot:  6 nvs_key          NVS keys         01 04 00410000 00001000[0m
+[0;32mI (117) boot: End of partition table[0m
+[0;32mI (121) boot: Defaulting to factory image[0m
+[0;32mI (126) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=227fch (141308) map[0m
+[0;32mI (159) esp_image: segment 1: paddr=00032824 vaddr=3fc97000 size=044f8h ( 17656) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=00036d24 vaddr=40374000 size=092f4h ( 37620) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8b1bch (569788) map[0m
+[0;32mI (276) esp_image: segment 4: paddr=000cb1e4 vaddr=4037d2f4 size=09cd4h ( 40148) load[0m
+[0;32mI (293) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (294) boot: Disabling RNG early entropy source...[0m
+[0;32mI (305) cpu_start: Multicore app[0m
+[0;32mI (305) cpu_start: Pro cpu up.[0m
+[0;32mI (305) cpu_start: Starting app cpu, entry point is 0x403754b8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (323) cpu_start: Pro cpu start user code[0m
+[0;32mI (324) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (324) cpu_start: Application information:[0m
+[0;32mI (327) cpu_start: Project name:     main[0m
+[0;32mI (331) cpu_start: App version:      1[0m
+[0;32mI (336) cpu_start: Compile time:     Apr 22 2024 19:08:47[0m
+[0;32mI (342) cpu_start: ELF file SHA256:  2a59fa21c3c10951...[0m
+[0;32mI (348) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (353) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (357) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (362) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (367) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (374) heap_init: At 3FC9EF48 len 0004A7C8 (297 KiB): DRAM[0m
+[0;32mI (380) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (387) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (393) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (400) spi_flash: detected chip: gd[0m
+[0;32mI (404) spi_flash: flash io: dio[0m
+[0;32mI (408) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (415) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (422) app_start: Starting scheduler on CPU0[0m
+[0;32mI (427) app_start: Starting scheduler on CPU1[0m
+[0;32mI (427) main_task: Started on CPU0[0m
+[0;32mI (437) main_task: Calling app_main()[0m
+[0;32mI (437) Main: Generated 4-digit Password: 0974[0m
+[0;32mI (447) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (457) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (467) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (477) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (487) gpio: GPIO[47]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (487) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (497) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (507) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (547) Main: ESP_WIFI_MODE_STA[0m
+[0;32mI (547) pp: pp rom version: e7ae62f[0m
+[0;32mI (547) net80211: net80211 rom version: e7ae62f[0m
+I (557) wifi:wifi driver task: 3fca9168, prio:23, stack:6656, core=0
+I (567) wifi:wifi firmware version: 91b9630
+I (567) wifi:wifi certification version: v7.0
+I (567) wifi:config NVS flash: enabled
+I (567) wifi:config nano formating: disabled
+I (567) wifi:Init data frame dynamic rx buffer num: 32
+I (577) wifi:Init static rx mgmt buffer num: 5
+I (577) wifi:Init management short buffer num: 32
+I (587) wifi:Init dynamic tx buffer num: 32
+I (587) wifi:Init static tx FG buffer num: 2
+I (597) wifi:Init static rx buffer size: 1600
+I (597) wifi:Init static rx buffer num: 10
+I (597) wifi:Init dynamic rx buffer num: 32
+[0;32mI (607) wifi_init: rx ba win: 6[0m
+[0;32mI (607) wifi_init: tcpip mbox: 32[0m
+[0;32mI (607) wifi_init: udp mbox: 6[0m
+[0;32mI (617) wifi_init: tcp mbox: 6[0m
+[0;32mI (617) wifi_init: tcp tx win: 5744[0m
+[0;32mI (627) wifi_init: tcp rx win: 5744[0m
+[0;32mI (627) wifi_init: tcp mss: 1440[0m
+[0;32mI (627) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (637) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (647) phy_init: phy_version 620,ec7ec30,Sep  5 2023,13:49:13[0m
+I (687) wifi:mode : sta (f4:12:fa:9f:fc:80)
+I (687) wifi:enable tsf
+[0;32mI (687) Main: wifi_init_sta finished.[0m
+I (777) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (777) wifi:state: init -> auth (b0)
+I (777) wifi:state: auth -> assoc (0)
+I (777) wifi:state: assoc -> run (10)
+I (807) wifi:connected with SpectrumSetup-B2, aid = 16, channel 6, BW20, bssid = b0:fc:88:39:7c:b8
+I (807) wifi:security: WPA2-PSK, phy: bgn, rssi: -81
+I (807) wifi:pm start, type: 1
+
+I (807) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (827) wifi:<ba-add>idx:0 (ifx:0, b0:fc:88:39:7c:b8), tid:6, ssn:1, winSize:64
+I (877) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1817) esp_netif_handlers: sta ip: 192.168.1.47, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1817) Main: got ip:192.168.1.47[0m
+[0;32mI (1817) Main: connected to ap SSID:SpectrumSetup-B2 password:quickflower066[0m
+[0;32mI (1827) gpio: GPIO[38]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1837) OneWire: Onewire set-up complete[0m
+[0;32mI (1837) Main: 1111[0m
+[0;32mI (1847) Main: 7777777[0m
+[0;32mI (1847) Main: my led status = 0[0m
+[0;32mI (1847) Main: my led status = 0[0m
+[0;32mI (1847) Main: my led status = 0[0m
+[0;32mI (1857) Main: my led status = 0[0m
+[0;32mI (1857) Main: my led status = 0[0m
+[0;32mI (1867) Main: my led status = 0[0m
+[0;32mI (1867) Main: my led status = 0[0m
+[0;32mI (1867) Main: my led status = 0[0m
+[0;32mI (1877) Main: my led status = 0[0m
+[0;32mI (1877) Main: my led status = 0[0m
+[0;32mI (1887) Main: my led status = 0[0m
+[0;32mI (1887) Main: my led status = 0[0m
+[0;32mI (1887) Main: my led status = 0[0m
+[0;32mI (1897) Main: my led status = 0[0m
+[0;32mI (1897) Main: my led status = 0[0m
+[0;32mI (1897) Main: my led status = 0[0m
+[0;32mI (1907) Main: my led status = 0[0m
+[0;32mI (1907) Main: my led status = 0[0m
+[0;32mI (1917) Main: my led status = 0[0m
+[0;32mI (1917) Main: my led status = 0[0m
+[0;32mI (1917) Main: my led status = 0[0m
+[0;32mI (1947) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (1947) Main: my led status = 0[0m
+[0;32mI (1947) Main: my led status = 0[0m
+[0;32mI (1947) Main: my led status = 0[0m
+[0;32mI (1957) Main: my led status = 0[0m
+[0;32mI (1957) Main: my led status = 0[0m
+[0;32mI (1957) Main: my led status = 0[0m
+[0;32mI (1967) Main: my led status = 0[0m
+[0;32mI (1967) Main: my led status = 0[0m
+[0;32mI (1967) Main: my led status = 0[0m
+[0;32mI (1977) Main: my led status = 0[0m
+[0;32mI (1977) Main: my led status = 0[0m
+[0;32mI (1987) Main: my led status = 0[0m
+[0;32mI (1987) Main: my led status = 0[0m
+[0;32mI (1987) Main: my led status = 0[0m
+[0;32mI (1997) Main: my led status = 0[0m
+[0;32mI (1997) Main: my led status = 0[0m
+[0;32mI (2007) Main: my led status = 0[0m
+[0;32mI (2007) Main: my led status = 0[0m
+[0;32mI (2007) Main: my led status = 0[0m
+[0;32mI (2017) Main: my led status = 0[0m
+[0;32mI (2017) Main: my led status = 0[0m
+[0;32mI (2027) Main: my led status = 0[0m
+[0;32mI (2047) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (2047) Main: my led status = 0[0m
+[0;32mI (2047) Main: my led status = 0[0m
+[0;32mI (2047) Main: my led status = 0[0m
+[0;32mI (2057) Main: my led status = 0[0m
+[0;32mI (2057) Main: my led status = 0[0m
+[0;32mI (2057) Main: my led status = 0[0m
+[0;32mI (2067) Main: my led status = 0[0m
+[0;32mI (2067) Main: my led status = 0[0m
+[0;32mI (2077) Main: my led status = 0[0m
+[0;32mI (2077) Main: my led status = 0[0m
+[0;32mI (2077) Main: my led status = 0[0m
+[0;32mI (2087) Main: my led status = 0[0m
+[0;32mI (2087) Main: my led status = 0[0m
+[0;32mI (2097) Main: my led status = 0[0m
+[0;32mI (2097) Main: my led status = 0[0m
+[0;32mI (2097) Main: my led status = 0[0m
+[0;32mI (2107) Main: my led status = 0[0m
+[0;32mI (2107) Main: my led status = 0[0m
+[0;32mI (2117) Main: my led status = 0[0m
+[0;32mI (2117) Main: my led status = 0[0m
+[0;32mI (2117) Main: my led status = 0[0m
+[0;32mI (2147) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (2147) Main: my led status = 0[0m
+[0;32mI (2147) Main: my led status = 0[0m
+[0;32mI (2147) Main: my led status = 0[0m
+[0;32mI (2147) Main: my led status = 0[0m
+[0;32mI (2157) Main: my led status = 0[0m
+[0;32mI (2157) Main: my led status = 0[0m
+[0;32mI (2167) Main: my led status = 0[0m
+[0;32mI (2167) Main: my led status = 0[0m
+[0;32mI (2167) Main: my led status = 0[0m
+[0;32mI (2177) Main: my led status = 0[0m
+[0;32mI (2177) Main: my led status = 0[0m
+[0;32mI (2187) Main: my led status = 0[0m
+[0;32mI (2187) Main: my led status = 0[0m
+[0;32mI (2187) Main: my led status = 0[0m
+[0;32mI (2197) Main: my led status = 0[0m
+[0;32mI (2197) Main: my led status = 0[0m
+[0;32mI (2197) Main: my led status = 0[0m
+[0;32mI (2207) Main: my led status = 0[0m
+[0;32mI (2207) Main: my led status = 0[0m
+[0;32mI (2217) Main: my led status = 0[0m
+[0;32mI (2217) Main: my led status = 0[0m
+[0;32mI (2217) Main: my led status = 0[0m
+[0;32mI (2247) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (2247) Main: my led status = 0[0m
+[0;32mI (2247) Main: my led status = 0[0m
+[0;32mI (2247) Main: my led status = 0[0m
+[0;32mI (2257) Main: my led status = 0[0m
+[0;32mI (2257) Main: my led status = 0[0m
+[0;32mI (2257) Main: my led status = 0[0m
+[0;32mI (2267) Main: my led status = 0[0m
+[0;32mI (2267) Main: my led status = 0[0m
+[0;32mI (2267) Main: my led status = 0[0m
+[0;32mI (2277) Main: my led status = 0[0m
+[0;32mI (2277) Main: my led status = 0[0m
+[0;32mI (2287) Main: my led status = 0[0m
+[0;32mI (2287) Main: my led status = 0[0m
+[0;32mI (2287) Main: my led status = 0[0m
+[0;32mI (2297) Main: my led status = 0[0m
+[0;32mI (2297) Main: my led status = 0[0m
+[0;32mI (2307) Main: my led status = 0[0m
+[0;32mI (2307) Main: my led status = 0[0m
+[0;32mI (2307) Main: my led status = 0[0m
+[0;32mI (2317) Main: my led status = 0[0m
+[0;32mI (2317) Main: my led status = 0[0m
+[0;32mI (2327) Main: my led status = 0[0m
+[0;32mI (2347) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (2347) Main: my led status = 0[0m
+[0;32mI (2347) Main: my led status = 0[0m
+[0;32mI (2347) Main: my led status = 0[0m
+[0;32mI (2357) Main: my led status = 0[0m
+[0;32mI (2357) Main: my led status = 0[0m
+[0;32mI (2357) Main: my led status = 0[0m
+[0;32mI (2367) Main: my led status = 0[0m
+[0;32mI (2367) Main: my led status = 0[0m
+[0;32mI (2377) Main: my led status = 0[0m
+[0;32mI (2377) Main: my led status = 0[0m
+[0;32mI (2377) Main: my led status = 0[0m
+[0;32mI (2387) Main: my led status = 0[0m
+[0;32mI (2387) Main: my led status = 0[0m
+[0;32mI (2397) Main: my led status = 0[0m
+[0;32mI (2397) Main: my led status = 0[0m
+[0;32mI (2397) Main: my led status = 0[0m
+[0;32mI (2407) Main: my led status = 0[0m
+[0;32mI (2407) Main: my led status = 0[0m
+[0;32mI (2407) Main: my led status = 0[0m
+[0;32mI (2417) Main: my led status = 0[0m
+[0;32mI (2417) Main: my led status = 0[0m
+[0;32mI (2447) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (2447) Main: my led status = 0[0m
+[0;32mI (2447) Main: my led status = 0[0m
+[0;32mI (2447) Main: my led status = 0[0m
+[0;32mI (2447) Main: my led status = 0[0m
+[0;32mI (2457) Main: my led status = 0[0m
+[0;32mI (2457) Main: my led status = 0[0m
+[0;32mI (2467) Main: my led status = 0[0m
+[0;32mI (2467) Main: my led status = 0[0m
+[0;32mI (2467) Main: my led status = 0[0m
+[0;32mI (2477) Main: my led status = 0[0m
+[0;32mI (2477) Main: my led status = 0[0m
+[0;32mI (2477) Main: my led status = 0[0m
+[0;32mI (2487) Main: my led status = 0[0m
+[0;32mI (2487) Main: my led status = 0[0m
+[0;32mI (2497) Main: my led status = 0[0m
+[0;32mI (2497) Main: my led status = 0[0m
+[0;32mI (2497) Main: my led status = 0[0m
+[0;32mI (2507) Main: my led status = 0[0m
+[0;32mI (2507) Main: my led status = 0[0m
+[0;32mI (2517) Main: my led status = 0[0m
+[0;32mI (2517) Main: my led status = 0[0m
+[0;32mI (2517) Main: my led status = 0[0m
+[0;32mI (2707) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (2707) Main: my led status = 0[0m
+[0;32mI (2797) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (2797) Main: my led status = 0[0m
+[0;32mI (2887) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (2887) Main: my led status = 0[0m
+[0;32mI (2977) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (2977) Main: my led status = 0[0m
+[0;32mI (3067) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (3067) Main: my led status = 0[0m
+[0;32mI (3157) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (3157) Main: my led status = 0[0m
+[0;32mI (3247) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (3247) Main: my led status = 0[0m
+[0;32mI (3337) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (3337) Main: my led status = 0[0m
+[0;32mI (3497) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (3497) Main: my led status = 0[0m
+[0;32mI (3587) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (3587) Main: my led status = 0[0m
+[0;32mI (3677) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (3677) Main: my led status = 0[0m
+[0;32mI (3767) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (3767) Main: my led status = 0[0m
+[0;32mI (3857) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (3857) Main: my led status = 0[0m
+[0;32mI (3947) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (3947) Main: my led status = 0[0m
+[0;32mI (4037) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (4037) Main: my led status = 0[0m
+[0;32mI (4197) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (4197) Main: my led status = 0[0m
+[0;32mI (4287) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (4287) Main: my led status = 0[0m
+[0;32mI (4377) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (4377) Main: my led status = 0[0m
+[0;32mI (4537) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (4537) Main: my led status = 0[0m
+[0;32mI (4697) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (4697) Main: my led status = 0[0m
+[0;32mI (4787) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (4787) Main: my led status = 0[0m
+[0;32mI (4877) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (4877) Main: my led status = 0[0m
+[0;32mI (4967) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (4967) Main: my led status = 0[0m
+[0;32mI (5057) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (5057) Main: my led status = 0[0m
+[0;32mI (5147) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (5147) Main: my led status = 0[0m
+[0;32mI (5237) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (5237) Main: my led status = 0[0m
+[0;32mI (5327) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (5327) Main: my led status = 0[0m
+[0;32mI (5417) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (5417) Main: my led status = 0[0m
+[0;32mI (5417) Main: my led status = 0[0m
+[0;32mI (5417) Main: my led status = 0[0m
+[0;32mI (5417) Main: my led status = 0[0m
+[0;32mI (5427) Main: my led status = 0[0m
+[0;32mI (5517) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (5517) Main: my led status = 0[0m
+[0;32mI (5517) Main: my led status = 0[0m
+[0;32mI (5517) Main: my led status = 0[0m
+[0;32mI (5517) Main: my led status = 0[0m
+[0;32mI (5527) Main: my led status = 0[0m
+[0;32mI (5617) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (5617) Main: my led status = 0[0m
+[0;32mI (5617) Main: my led status = 0[0m
+[0;32mI (5617) Main: my led status = 0[0m
+[0;32mI (5617) Main: my led status = 0[0m
+[0;32mI (5627) Main: my led status = 0[0m
+[0;32mI (5717) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (5717) Main: my led status = 0[0m
+[0;32mI (5717) Main: my led status = 0[0m
+[0;32mI (5717) Main: my led status = 0[0m
+[0;32mI (5717) Main: my led status = 0[0m
+[0;32mI (5727) Main: my led status = 0[0m
+[0;32mI (5817) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (5817) Main: my led status = 0[0m
+[0;32mI (5817) Main: my led status = 0[0m
+[0;32mI (5817) Main: my led status = 0[0m
+[0;32mI (5817) Main: my led status = 0[0m
+[0;32mI (5827) Main: my led status = 0[0m
+[0;32mI (5917) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (5917) Main: my led status = 0[0m
+[0;32mI (5917) Main: my led status = 0[0m
+[0;32mI (5917) Main: my led status = 0[0m
+[0;32mI (5917) Main: my led status = 0[0m
+[0;32mI (5927) Main: my led status = 0[0m
+[0;32mI (6017) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (6017) Main: my led status = 0[0m
+[0;32mI (6017) Main: my led status = 0[0m
+[0;32mI (6017) Main: my led status = 0[0m
+[0;32mI (6017) Main: my led status = 0[0m
+[0;32mI (6027) Main: my led status = 0[0m
+[0;32mI (6117) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (6117) Main: my led status = 0[0m
+[0;32mI (6117) Main: my led status = 0[0m
+[0;32mI (6117) Main: my led status = 0[0m
+[0;32mI (6117) Main: my led status = 0[0m
+[0;32mI (6127) Main: my led status = 0[0m
+[0;32mI (6217) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (6217) Main: my led status = 0[0m
+[0;32mI (6217) Main: my led status = 0[0m
+[0;32mI (6217) Main: my led status = 0[0m
+[0;32mI (6217) Main: my led status = 0[0m
+[0;32mI (6227) Main: my led status = 0[0m
+[0;32mI (6317) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (6317) Main: my led status = 0[0m
+[0;32mI (6317) Main: my led status = 0[0m
+[0;32mI (6317) Main: my led status = 0[0m
+[0;32mI (6317) Main: my led status = 0[0m
+[0;32mI (6327) Main: my led status = 0[0m
+[0;32mI (6417) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (6417) Main: my led status = 0[0m
+[0;32mI (6417) Main: my led status = 0[0m
+[0;32mI (6417) Main: my led status = 0[0m
+[0;32mI (6417) Main: my led status = 0[0m
+[0;32mI (6427) Main: my led status = 0[0m
+[0;32mI (6517) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (6517) Main: my led status = 0[0m
+[0;32mI (6517) Main: my led status = 0[0m
+[0;32mI (6517) Main: my led status = 0[0m
+[0;32mI (6517) Main: my led status = 0[0m
+[0;32mI (6527) Main: my led status = 0[0m
+[0;32mI (6617) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (6617) Main: my led status = 0[0m
+[0;32mI (6617) Main: my led status = 0[0m
+[0;32mI (6617) Main: my led status = 0[0m
+[0;32mI (6617) Main: my led status = 0[0m
+[0;32mI (6627) Main: my led status = 0[0m
+[0;32mI (6717) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (6717) Main: my led status = 0[0m
+[0;32mI (6717) Main: my led status = 0[0m
+[0;32mI (6717) Main: my led status = 0[0m
+[0;32mI (6717) Main: my led status = 0[0m
+[0;32mI (6727) Main: my led status = 0[0m
+[0;32mI (6817) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (6817) Main: my led status = 0[0m
+[0;32mI (6817) Main: my led status = 0[0m
+[0;32mI (6817) Main: my led status = 0[0m
+[0;32mI (6817) Main: my led status = 0[0m
+[0;32mI (6827) Main: my led status = 0[0m
+[0;32mI (6917) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (6917) Main: my led status = 0[0m
+[0;32mI (6917) Main: my led status = 0[0m
+[0;32mI (6917) Main: my led status = 0[0m
+[0;32mI (6917) Main: my led status = 0[0m
+[0;32mI (6927) Main: my led status = 0[0m
+[0;32mI (7017) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (7017) Main: my led status = 0[0m
+[0;32mI (7017) Main: my led status = 0[0m
+[0;32mI (7017) Main: my led status = 0[0m
+[0;32mI (7017) Main: my led status = 0[0m
+[0;32mI (7027) Main: my led status = 0[0m
+[0;32mI (7197) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (7197) Main: my led status = 0[0m
+[0;32mI (7287) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (7287) Main: my led status = 0[0m
+[0;32mI (7377) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (7377) Main: my led status = 0[0m
+[0;32mI (7467) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (7467) Main: my led status = 0[0m
+[0;32mI (7557) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (7557) Main: my led status = 0[0m
+[0;32mI (7647) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (7647) Main: my led status = 0[0m
+[0;32mI (7737) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (7737) Main: my led status = 0[0m
+[0;32mI (7897) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (7897) Main: my led status = 0[0m
+[0;32mI (7987) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (7987) Main: my led status = 0[0m
+[0;32mI (8077) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (8077) Main: my led status = 0[0m
+[0;32mI (8167) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (8167) Main: my led status = 0[0m
+[0;32mI (8257) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (8257) Main: my led status = 0[0m
+[0;32mI (8427) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (8427) Main: my led status = 0[0m
+[0;32mI (8517) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (8517) Main: my led status = 0[0m
+[0;32mI (8517) Main: my led status = 0[0m
+[0;32mI (8517) Main: my led status = 0[0m
+[0;32mI (8517) Main: my led status = 0[0m
+[0;32mI (8527) Main: my led status = 0[0m
+[0;32mI (8617) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (8617) Main: my led status = 0[0m
+[0;32mI (8617) Main: my led status = 0[0m
+[0;32mI (8617) Main: my led status = 0[0m
+[0;32mI (8617) Main: my led status = 0[0m
+[0;32mI (8627) Main: my led status = 0[0m
+[0;32mI (8717) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (8717) Main: my led status = 0[0m
+[0;32mI (8717) Main: my led status = 0[0m
+[0;32mI (8717) Main: my led status = 0[0m
+[0;32mI (8717) Main: my led status = 0[0m
+[0;32mI (8727) Main: my led status = 0[0m
+[0;32mI (8817) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (8817) Main: my led status = 0[0m
+[0;32mI (8817) Main: my led status = 0[0m
+[0;32mI (8817) Main: my led status = 0[0m
+[0;32mI (8817) Main: my led status = 0[0m
+[0;32mI (8827) Main: my led status = 0[0m
+[0;32mI (8917) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (8917) Main: my led status = 0[0m
+[0;32mI (8917) Main: my led status = 0[0m
+[0;32mI (8917) Main: my led status = 0[0m
+[0;32mI (8917) Main: my led status = 0[0m
+[0;32mI (8927) Main: my led status = 0[0m
+[0;32mI (9017) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (9017) Main: my led status = 0[0m
+[0;32mI (9017) Main: my led status = 0[0m
+[0;32mI (9017) Main: my led status = 0[0m
+[0;32mI (9017) Main: my led status = 0[0m
+[0;32mI (9027) Main: my led status = 0[0m
+[0;32mI (9117) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (9117) Main: my led status = 0[0m
+[0;32mI (9117) Main: my led status = 0[0m
+[0;32mI (9117) Main: my led status = 0[0m
+[0;32mI (9117) Main: my led status = 0[0m
+[0;32mI (9127) Main: my led status = 0[0m
+[0;32mI (9217) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (9217) Main: my led status = 0[0m
+[0;32mI (9217) Main: my led status = 0[0m
+[0;32mI (9217) Main: my led status = 0[0m
+[0;32mI (9217) Main: my led status = 0[0m
+[0;32mI (9317) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (9317) Main: my led status = 0[0m
+[0;32mI (9317) Main: my led status = 0[0m
+[0;32mI (9317) Main: my led status = 0[0m
+[0;32mI (9317) Main: my led status = 0[0m
+[0;32mI (9327) Main: my led status = 0[0m
+[0;32mI (9417) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (9417) Main: my led status = 0[0m
+[0;32mI (9417) Main: my led status = 0[0m
+[0;32mI (9417) Main: my led status = 0[0m
+[0;32mI (9417) Main: my led status = 0[0m
+[0;32mI (9427) Main: my led status = 0[0m
+[0;32mI (9517) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (9517) Main: my led status = 0[0m
+[0;32mI (9517) Main: my led status = 0[0m
+[0;32mI (9517) Main: my led status = 0[0m
+[0;32mI (9517) Main: my led status = 0[0m
+[0;32mI (9527) Main: my led status = 0[0m
+[0;32mI (9617) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (9617) Main: my led status = 0[0m
+[0;32mI (9617) Main: my led status = 0[0m
+[0;32mI (9617) Main: my led status = 0[0m
+[0;32mI (9617) Main: my led status = 0[0m
+[0;32mI (9627) Main: my led status = 0[0m
+[0;32mI (9717) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (9717) Main: my led status = 0[0m
+[0;32mI (9717) Main: my led status = 0[0m
+[0;32mI (9717) Main: my led status = 0[0m
+[0;32mI (9717) Main: my led status = 0[0m
+[0;32mI (9727) Main: my led status = 0[0m
+[0;32mI (9817) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (9817) Main: my led status = 0[0m
+[0;32mI (9817) Main: my led status = 0[0m
+[0;32mI (9817) Main: my led status = 0[0m
+[0;32mI (9817) Main: my led status = 0[0m
+[0;32mI (9827) Main: my led status = 0[0m
+[0;32mI (9917) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (9917) Main: my led status = 0[0m
+[0;32mI (9917) Main: my led status = 0[0m
+[0;32mI (9917) Main: my led status = 0[0m
+[0;32mI (9917) Main: my led status = 0[0m
+[0;32mI (9927) Main: my led status = 0[0m
+[0;32mI (10017) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (10017) Main: my led status = 0[0m
+[0;32mI (10017) Main: my led status = 0[0m
+[0;32mI (10017) Main: my led status = 0[0m
+[0;32mI (10017) Main: my led status = 0[0m
+[0;32mI (10117) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (10117) Main: my led status = 0[0m
+[0;32mI (10117) Main: my led status = 0[0m
+[0;32mI (10117) Main: my led status = 0[0m
+[0;32mI (10117) Main: my led status = 0[0m
+[0;32mI (10127) Main: my led status = 0[0m
+[0;32mI (10217) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (10217) Main: my led status = 0[0m
+[0;32mI (10217) Main: my led status = 0[0m
+[0;32mI (10217) Main: my led status = 0[0m
+[0;32mI (10217) Main: my led status = 0[0m
+[0;32mI (10317) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (10317) Main: my led status = 0[0m
+[0;32mI (10317) Main: my led status = 0[0m
+[0;32mI (10317) Main: my led status = 0[0m
+[0;32mI (10317) Main: my led status = 0[0m
+[0;32mI (10327) Main: my led status = 0[0m
+[0;32mI (10417) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (10417) Main: my led status = 0[0m
+[0;32mI (10417) Main: my led status = 0[0m
+[0;32mI (10417) Main: my led status = 0[0m
+[0;32mI (10417) Main: my led status = 0[0m
+[0;32mI (10517) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (10517) Main: my led status = 0[0m
+[0;32mI (10517) Main: my led status = 0[0m
+[0;32mI (10517) Main: my led status = 0[0m
+[0;32mI (10517) Main: my led status = 0[0m
+[0;32mI (10527) Main: my led status = 0[0m
+[0;32mI (10617) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (10617) Main: my led status = 0[0m
+[0;32mI (10617) Main: my led status = 0[0m
+[0;32mI (10617) Main: my led status = 0[0m
+[0;32mI (10617) Main: my led status = 0[0m
+[0;32mI (10717) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (10717) Main: my led status = 0[0m
+[0;32mI (10717) Main: my led status = 0[0m
+[0;32mI (10717) Main: my led status = 0[0m
+[0;32mI (10717) Main: my led status = 0[0m
+[0;32mI (10727) Main: my led status = 0[0m
+[0;32mI (10817) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (10817) Main: my led status = 0[0m
+[0;32mI (10817) Main: my led status = 0[0m
+[0;32mI (10817) Main: my led status = 0[0m
+[0;32mI (10817) Main: my led status = 0[0m
+[0;32mI (10917) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (10917) Main: my led status = 0[0m
+[0;32mI (10917) Main: my led status = 0[0m
+[0;32mI (10917) Main: my led status = 0[0m
+[0;32mI (10917) Main: my led status = 0[0m
+[0;32mI (10927) Main: my led status = 0[0m
+[0;32mI (11097) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (11097) Main: my led status = 0[0m
+[0;32mI (11187) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (11187) Main: my led status = 0[0m
+[0;32mI (11277) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (11277) Main: my led status = 0[0m
+[0;32mI (11367) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (11367) Main: my led status = 0[0m
+[0;32mI (11457) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (11457) Main: my led status = 0[0m
+[0;32mI (11617) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (11617) Main: my led status = 0[0m
+[0;32mI (11707) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (11707) Main: my led status = 0[0m
+[0;32mI (11797) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (11797) Main: my led status = 0[0m
+[0;32mI (11887) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (11887) Main: my led status = 0[0m
+[0;32mI (11977) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (11977) Main: my led status = 0[0m
+[0;32mI (12067) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (12067) Main: my led status = 0[0m
+[0;32mI (12157) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (12157) Main: my led status = 0[0m
+[0;32mI (12247) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (12247) Main: my led status = 0[0m
+[0;32mI (12337) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (12337) Main: my led status = 0[0m
+[0;32mI (12497) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (12497) Main: my led status = 0[0m
+[0;32mI (12587) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (12587) Main: my led status = 0[0m
+[0;32mI (12677) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (12677) Main: my led status = 0[0m
+[0;32mI (12767) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (12767) Main: my led status = 0[0m
+[0;32mI (12857) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (12857) Main: my led status = 0[0m
+[0;32mI (12947) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (12947) Main: my led status = 0[0m
+[0;32mI (13037) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (13037) Main: my led status = 0[0m
+[0;32mI (13197) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (13197) Main: my led status = 0[0m
+[0;32mI (13287) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (13287) Main: my led status = 0[0m
+[0;32mI (13377) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (13377) Main: my led status = 0[0m
+[0;32mI (13617) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (13617) Main: my led status = 0[0m
+[0;32mI (13707) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (13707) Main: my led status = 0[0m
+[0;32mI (13797) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (13797) Main: my led status = 0[0m
+[0;32mI (13887) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (13887) Main: my led status = 0[0m
+[0;32mI (13977) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (13977) Main: my led status = 0[0m
+[0;32mI (14067) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (14067) Main: my led status = 0[0m
+[0;32mI (14157) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (14157) Main: my led status = 0[0m
+[0;32mI (14247) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (14247) Main: my led status = 0[0m
+[0;32mI (14337) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (14337) Main: my led status = 0[0m
+[0;32mI (14597) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (14597) Main: my led status = 0[0m
+[0;32mI (14687) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (14687) Main: my led status = 0[0m
+[0;32mI (14777) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (14777) Main: my led status = 0[0m
+[0;32mI (14867) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (14867) Main: my led status = 0[0m
+[0;32mI (14957) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (14957) Main: my led status = 0[0m
+[0;32mI (15047) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (15047) Main: my led status = 0[0m
+[0;32mI (15137) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (15137) Main: my led status = 0[0m
+[0;32mI (15297) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (15297) Main: my led status = 0[0m
+[0;32mI (15387) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (15387) Main: my led status = 0[0m
+[0;32mI (15477) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (15477) Main: my led status = 0[0m
+[0;32mI (15567) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (15567) Main: my led status = 0[0m
+[0;32mI (15657) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (15657) Main: my led status = 0[0m
+[0;32mI (15747) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (15747) Main: my led status = 0[0m
+[0;32mI (15837) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (15837) Main: my led status = 0[0m
+[0;32mI (15927) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (15927) Main: my led status = 0[0m
+[0;32mI (16017) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (16017) Main: my led status = 0[0m
+[0;32mI (16017) Main: my led status = 0[0m
+[0;32mI (16017) Main: my led status = 0[0m
+[0;32mI (16017) Main: my led status = 0[0m
+[0;32mI (16117) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (16117) Main: my led status = 0[0m
+[0;32mI (16117) Main: my led status = 0[0m
+[0;32mI (16117) Main: my led status = 0[0m
+[0;32mI (16117) Main: my led status = 0[0m
+[0;32mI (16127) Main: my led status = 0[0m
+[0;32mI (16217) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (16217) Main: my led status = 0[0m
+[0;32mI (16217) Main: my led status = 0[0m
+[0;32mI (16217) Main: my led status = 0[0m
+[0;32mI (16217) Main: my led status = 0[0m
+[0;32mI (16317) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (16317) Main: my led status = 0[0m
+[0;32mI (16317) Main: my led status = 0[0m
+[0;32mI (16317) Main: my led status = 0[0m
+[0;32mI (16317) Main: my led status = 0[0m
+[0;32mI (16327) Main: my led status = 0[0m
+[0;32mI (16417) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (16417) Main: my led status = 0[0m
+[0;32mI (16417) Main: my led status = 0[0m
+[0;32mI (16417) Main: my led status = 0[0m
+[0;32mI (16417) Main: my led status = 0[0m
+[0;32mI (16517) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (16517) Main: my led status = 0[0m
+[0;32mI (16517) Main: my led status = 0[0m
+[0;32mI (16517) Main: my led status = 0[0m
+[0;32mI (16517) Main: my led status = 0[0m
+[0;32mI (16527) Main: my led status = 0[0m
+[0;32mI (16617) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (16617) Main: my led status = 0[0m
+[0;32mI (16617) Main: my led status = 0[0m
+[0;32mI (16617) Main: my led status = 0[0m
+[0;32mI (16617) Main: my led status = 0[0m
+[0;32mI (16717) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (16717) Main: my led status = 0[0m
+[0;32mI (16717) Main: my led status = 0[0m
+[0;32mI (16717) Main: my led status = 0[0m
+[0;32mI (16717) Main: my led status = 0[0m
+[0;32mI (16727) Main: my led status = 0[0m
+[0;32mI (16817) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (16817) Main: my led status = 0[0m
+[0;32mI (16817) Main: my led status = 0[0m
+[0;32mI (16817) Main: my led status = 0[0m
+[0;32mI (16817) Main: my led status = 0[0m
+[0;32mI (16917) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (16917) Main: my led status = 0[0m
+[0;32mI (16917) Main: my led status = 0[0m
+[0;32mI (16917) Main: my led status = 0[0m
+[0;32mI (16917) Main: my led status = 0[0m
+[0;32mI (16927) Main: my led status = 0[0m
+[0;32mI (17017) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (17017) Main: my led status = 0[0m
+[0;32mI (17017) Main: my led status = 0[0m
+[0;32mI (17017) Main: my led status = 0[0m
+[0;32mI (17017) Main: my led status = 0[0m
+[0;32mI (17117) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (17117) Main: my led status = 0[0m
+[0;32mI (17117) Main: my led status = 0[0m
+[0;32mI (17117) Main: my led status = 0[0m
+[0;32mI (17117) Main: my led status = 0[0m
+[0;32mI (17127) Main: my led status = 0[0m
+[0;32mI (17217) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (17217) Main: my led status = 0[0m
+[0;32mI (17217) Main: my led status = 0[0m
+[0;32mI (17217) Main: my led status = 0[0m
+[0;32mI (17217) Main: my led status = 0[0m
+[0;32mI (17317) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (17317) Main: my led status = 0[0m
+[0;32mI (17317) Main: my led status = 0[0m
+[0;32mI (17317) Main: my led status = 0[0m
+[0;32mI (17317) Main: my led status = 0[0m
+[0;32mI (17327) Main: my led status = 0[0m
+[0;32mI (17417) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (17417) Main: my led status = 0[0m
+[0;32mI (17417) Main: my led status = 0[0m
+[0;32mI (17417) Main: my led status = 0[0m
+[0;32mI (17417) Main: my led status = 0[0m
+[0;32mI (17517) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (17517) Main: my led status = 0[0m
+[0;32mI (17517) Main: my led status = 0[0m
+[0;32mI (17517) Main: my led status = 0[0m
+[0;32mI (17517) Main: my led status = 0[0m
+[0;32mI (17527) Main: my led status = 0[0m
+[0;32mI (17617) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (17617) Main: my led status = 0[0m
+[0;32mI (17617) Main: my led status = 0[0m
+[0;32mI (17617) Main: my led status = 0[0m
+[0;32mI (17617) Main: my led status = 0[0m
+[0;32mI (17717) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (17717) Main: my led status = 0[0m
+[0;32mI (17717) Main: my led status = 0[0m
+[0;32mI (17717) Main: my led status = 0[0m
+[0;32mI (17717) Main: my led status = 0[0m
+[0;32mI (17727) Main: my led status = 0[0m
+[0;32mI (17817) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (17817) Main: my led status = 0[0m
+[0;32mI (17817) Main: my led status = 0[0m
+[0;32mI (17817) Main: my led status = 0[0m
+[0;32mI (17817) Main: my led status = 0[0m
+[0;32mI (17917) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (17917) Main: my led status = 0[0m
+[0;32mI (17917) Main: my led status = 0[0m
+[0;32mI (17917) Main: my led status = 0[0m
+[0;32mI (17917) Main: my led status = 0[0m
+[0;32mI (17927) Main: my led status = 0[0m
+[0;32mI (18017) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (18017) Main: my led status = 0[0m
+[0;32mI (18017) Main: my led status = 0[0m
+[0;32mI (18017) Main: my led status = 0[0m
+[0;32mI (18017) Main: my led status = 0[0m
+[0;32mI (18117) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (18117) Main: my led status = 0[0m
+[0;32mI (18117) Main: my led status = 0[0m
+[0;32mI (18117) Main: my led status = 0[0m
+[0;32mI (18117) Main: my led status = 0[0m
+[0;32mI (18127) Main: my led status = 0[0m
+[0;32mI (18217) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (18217) Main: my led status = 0[0m
+[0;32mI (18217) Main: my led status = 0[0m
+[0;32mI (18217) Main: my led status = 0[0m
+[0;32mI (18217) Main: my led status = 0[0m
+[0;32mI (18317) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (18317) Main: my led status = 0[0m
+[0;32mI (18317) Main: my led status = 0[0m
+[0;32mI (18317) Main: my led status = 0[0m
+[0;32mI (18317) Main: my led status = 0[0m
+[0;32mI (18327) Main: my led status = 0[0m
+[0;32mI (18417) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (18417) Main: my led status = 0[0m
+[0;32mI (18417) Main: my led status = 0[0m
+[0;32mI (18417) Main: my led status = 0[0m
+[0;32mI (18417) Main: my led status = 0[0m
+[0;32mI (18517) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (18517) Main: my led status = 0[0m
+[0;32mI (18517) Main: my led status = 0[0m
+[0;32mI (18517) Main: my led status = 0[0m
+[0;32mI (18517) Main: my led status = 0[0m
+[0;32mI (18527) Main: my led status = 0[0m
+[0;32mI (18617) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (18617) Main: my led status = 0[0m
+[0;32mI (18617) Main: my led status = 0[0m
+[0;32mI (18617) Main: my led status = 0[0m
+[0;32mI (18617) Main: my led status = 0[0m
+[0;32mI (18717) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (18717) Main: my led status = 0[0m
+[0;32mI (18717) Main: my led status = 0[0m
+[0;32mI (18717) Main: my led status = 0[0m
+[0;32mI (18717) Main: my led status = 0[0m
+[0;32mI (18727) Main: my led status = 0[0m
+[0;32mI (18817) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (18817) Main: my led status = 0[0m
+[0;32mI (18817) Main: my led status = 0[0m
+[0;32mI (18817) Main: my led status = 0[0m
+[0;32mI (18817) Main: my led status = 0[0m
+[0;32mI (18917) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (18917) Main: my led status = 0[0m
+[0;32mI (18917) Main: my led status = 0[0m
+[0;32mI (18917) Main: my led status = 0[0m
+[0;32mI (18917) Main: my led status = 0[0m
+[0;32mI (18927) Main: my led status = 0[0m
+[0;32mI (19017) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (19017) Main: my led status = 0[0m
+[0;32mI (19017) Main: my led status = 0[0m
+[0;32mI (19017) Main: my led status = 0[0m
+[0;32mI (19017) Main: my led status = 0[0m
+[0;32mI (19117) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (19117) Main: my led status = 0[0m
+[0;32mI (19117) Main: my led status = 0[0m
+[0;32mI (19117) Main: my led status = 0[0m
+[0;32mI (19117) Main: my led status = 0[0m
+[0;32mI (19127) Main: my led status = 0[0m
+[0;32mI (19217) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (19217) Main: my led status = 0[0m
+[0;32mI (19217) Main: my led status = 0[0m
+[0;32mI (19217) Main: my led status = 0[0m
+[0;32mI (19217) Main: my led status = 0[0m
+[0;32mI (19317) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (19317) Main: my led status = 0[0m
+[0;32mI (19317) Main: my led status = 0[0m
+[0;32mI (19317) Main: my led status = 0[0m
+[0;32mI (19317) Main: my led status = 0[0m
+[0;32mI (19327) Main: my led status = 0[0m
+[0;32mI (19417) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (19417) Main: my led status = 0[0m
+[0;32mI (19417) Main: my led status = 0[0m
+[0;32mI (19417) Main: my led status = 0[0m
+[0;32mI (19417) Main: my led status = 0[0m
+[0;32mI (19517) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (19517) Main: my led status = 0[0m
+[0;32mI (19517) Main: my led status = 0[0m
+[0;32mI (19517) Main: my led status = 0[0m
+[0;32mI (19517) Main: my led status = 0[0m
+[0;32mI (19527) Main: my led status = 0[0m
+[0;32mI (19617) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (19617) Main: my led status = 0[0m
+[0;32mI (19617) Main: my led status = 0[0m
+[0;32mI (19617) Main: my led status = 0[0m
+[0;32mI (19617) Main: my led status = 0[0m
+[0;32mI (19717) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (19717) Main: my led status = 0[0m
+[0;32mI (19717) Main: my led status = 0[0m
+[0;32mI (19717) Main: my led status = 0[0m
+[0;32mI (19717) Main: my led status = 0[0m
+[0;32mI (19897) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (19897) Main: my led status = 0[0m
+[0;32mI (19987) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (19987) Main: my led status = 0[0m
+[0;32mI (20077) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (20077) Main: my led status = 0[0m
+[0;32mI (20167) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (20167) Main: my led status = 0[0m
+[0;32mI (20257) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (20257) Main: my led status = 0[0m
+[0;32mI (20347) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (20347) Main: my led status = 0[0m
+[0;32mI (20507) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (20507) Main: my led status = 0[0m
+[0;32mI (20597) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (20597) Main: my led status = 0[0m
+[0;32mI (20687) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (20687) Main: my led status = 0[0m
+[0;32mI (20777) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (20777) Main: my led status = 0[0m
+[0;32mI (20867) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (20867) Main: my led status = 0[0m
+[0;32mI (20957) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (20957) Main: my led status = 0[0m
+[0;32mI (21047) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (21047) Main: my led status = 0[0m
+[0;32mI (21137) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (21137) Main: my led status = 0[0m
+[0;32mI (21297) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (21297) Main: my led status = 0[0m
+[0;32mI (21387) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (21387) Main: my led status = 0[0m
+[0;32mI (21477) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (21477) Main: my led status = 0[0m
+[0;32mI (21567) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (21567) Main: my led status = 0[0m
+[0;32mI (21657) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (21657) Main: my led status = 0[0m
+[0;32mI (21747) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (21747) Main: my led status = 0[0m
+[0;32mI (21837) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (21837) Main: my led status = 0[0m
+[0;32mI (21927) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (21927) Main: my led status = 0[0m
+[0;32mI (22017) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (22017) Main: my led status = 0[0m
+[0;32mI (22017) Main: my led status = 0[0m
+[0;32mI (22017) Main: my led status = 0[0m
+[0;32mI (22017) Main: my led status = 0[0m
+[0;32mI (22027) Main: my led status = 0[0m
+[0;32mI (22117) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (22117) Main: my led status = 0[0m
+[0;32mI (22117) Main: my led status = 0[0m
+[0;32mI (22117) Main: my led status = 0[0m
+[0;32mI (22117) Main: my led status = 0[0m
+[0;32mI (22217) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (22217) Main: my led status = 0[0m
+[0;32mI (22217) Main: my led status = 0[0m
+[0;32mI (22217) Main: my led status = 0[0m
+[0;32mI (22217) Main: my led status = 0[0m
+[0;32mI (22227) Main: my led status = 0[0m
+[0;32mI (22317) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (22317) Main: my led status = 0[0m
+[0;32mI (22317) Main: my led status = 0[0m
+[0;32mI (22317) Main: my led status = 0[0m
+[0;32mI (22317) Main: my led status = 0[0m
+[0;32mI (22417) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (22417) Main: my led status = 0[0m
+[0;32mI (22417) Main: my led status = 0[0m
+[0;32mI (22417) Main: my led status = 0[0m
+[0;32mI (22417) Main: my led status = 0[0m
+[0;32mI (22427) Main: my led status = 0[0m
+I (22497) wifi:<ba-add>idx:1 (ifx:0, b0:fc:88:39:7c:b8), tid:0, ssn:1, winSize:64
+[0;32mI (22517) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (22517) Main: LED should be on[0m
+[0;32mI (22517) Main: my led status = 1[0m
+[0;32mI (22527) Main: my led status = 1[0m
+[0;32mI (22527) Main: my led status = 1[0m
+[0;32mI (22547) Main: Sending the password: 974[0m
+[0;32mI (22617) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (22617) Main: my led status = 1[0m
+[0;32mI (22617) Main: my led status = 1[0m
+[0;32mI (22617) Main: my led status = 1[0m
+[0;32mI (22617) Main: my led status = 1[0m
+[0;32mI (22717) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (22717) Main: my led status = 1[0m
+[0;32mI (22717) Main: my led status = 1[0m
+[0;32mI (22717) Main: my led status = 1[0m
+[0;32mI (22717) Main: my led status = 1[0m
+[0;32mI (22817) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (22817) Main: my led status = 1[0m
+[0;32mI (22817) Main: my led status = 1[0m
+[0;32mI (22817) Main: my led status = 1[0m
+[0;32mI (22817) Main: my led status = 1[0m
+[0;32mI (22917) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (22917) Main: my led status = 1[0m
+[0;32mI (22917) Main: my led status = 1[0m
+[0;32mI (22917) Main: my led status = 1[0m
+[0;32mI (22917) Main: my led status = 1[0m
+[0;32mI (23017) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (23017) Main: my led status = 1[0m
+[0;32mI (23017) Main: my led status = 1[0m
+[0;32mI (23017) Main: my led status = 1[0m
+[0;32mI (23017) Main: my led status = 1[0m
+[0;32mI (23027) Main: my led status = 1[0m
+[0;32mI (23117) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (23117) Main: my led status = 1[0m
+[0;32mI (23117) Main: my led status = 1[0m
+[0;32mI (23117) Main: my led status = 1[0m
+[0;32mI (23117) Main: my led status = 1[0m
+[0;32mI (23217) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (23217) Main: my led status = 1[0m
+[0;32mI (23217) Main: my led status = 1[0m
+[0;32mI (23217) Main: my led status = 1[0m
+[0;32mI (23217) Main: my led status = 1[0m
+[0;32mI (23227) Main: my led status = 1[0m
+[0;32mI (23317) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (23317) Main: my led status = 1[0m
+[0;32mI (23317) Main: my led status = 1[0m
+[0;32mI (23317) Main: my led status = 1[0m
+[0;32mI (23317) Main: my led status = 1[0m
+[0;32mI (23417) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (23417) Main: my led status = 1[0m
+[0;32mI (23417) Main: my led status = 1[0m
+[0;32mI (23417) Main: my led status = 1[0m
+[0;32mI (23417) Main: my led status = 1[0m
+[0;32mI (23427) Main: my led status = 1[0m
+[0;32mI (23597) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (23597) Main: my led status = 1[0m
+[0;32mI (23687) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (23687) Main: my led status = 1[0m
+[0;32mI (23777) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (23777) Main: my led status = 1[0m
+[0;32mI (23867) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (23867) Main: my led status = 1[0m
+[0;32mI (23957) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (23957) Main: my led status = 1[0m
+[0;32mI (24047) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (24047) Main: my led status = 1[0m
+[0;32mI (24137) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (24137) Main: my led status = 1[0m
+[0;32mI (24297) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (24297) Main: my led status = 1[0m
+[0;32mI (24387) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (24387) Main: my led status = 1[0m
+[0;32mI (24477) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (24477) Main: my led status = 1[0m
+[0;32mI (24567) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (24567) Main: my led status = 1[0m
+[0;32mI (24657) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (24657) Main: my led status = 1[0m
+[0;32mI (24747) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (24747) Main: my led status = 1[0m
+[0;32mI (24837) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (24837) Main: my led status = 1[0m
+[0;32mI (24997) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (24997) Main: my led status = 1[0m
+[0;32mI (25087) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (25087) Main: my led status = 1[0m
+[0;32mI (25177) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (25177) Main: my led status = 1[0m
+[0;32mI (25267) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (25267) Main: my led status = 1[0m
+[0;32mI (25357) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (25357) Main: my led status = 1[0m
+[0;32mI (25447) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (25447) Main: my led status = 1[0m
+[0;32mI (25537) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (25537) Main: my led status = 1[0m
+[0;32mI (25697) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (25697) Main: my led status = 1[0m
+[0;32mI (25787) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (25787) Main: my led status = 1[0m
+[0;32mI (25877) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (25877) Main: my led status = 1[0m
+[0;32mI (26047) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (26047) Main: my led status = 1[0m
+[0;32mI (26137) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (26137) Main: my led status = 1[0m
+[0;32mI (26227) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (26227) Main: my led status = 1[0m
+[0;32mI (26317) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (26317) Main: my led status = 1[0m
+[0;32mI (26317) Main: my led status = 1[0m
+[0;32mI (26317) Main: my led status = 1[0m
+[0;32mI (26317) Main: my led status = 1[0m
+[0;32mI (26417) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (26417) Main: my led status = 1[0m
+[0;32mI (26417) Main: my led status = 1[0m
+[0;32mI (26417) Main: my led status = 1[0m
+[0;32mI (26417) Main: my led status = 1[0m
+[0;32mI (26517) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (26517) Main: my led status = 1[0m
+[0;32mI (26517) Main: my led status = 1[0m
+[0;32mI (26517) Main: my led status = 1[0m
+[0;32mI (26517) Main: my led status = 1[0m
+[0;32mI (26527) Main: my led status = 1[0m
+[0;32mI (26617) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (26617) Main: my led status = 1[0m
+[0;32mI (26617) Main: my led status = 1[0m
+[0;32mI (26617) Main: my led status = 1[0m
+[0;32mI (26617) Main: my led status = 1[0m
+[0;32mI (26717) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (26717) Main: my led status = 1[0m
+[0;32mI (26717) Main: my led status = 1[0m
+[0;32mI (26717) Main: my led status = 1[0m
+[0;32mI (26717) Main: my led status = 1[0m
+[0;32mI (26727) Main: my led status = 1[0m
+[0;32mI (26817) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (26817) Main: my led status = 1[0m
+[0;32mI (26817) Main: my led status = 1[0m
+[0;32mI (26817) Main: my led status = 1[0m
+[0;32mI (26817) Main: my led status = 1[0m
+[0;32mI (26917) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (26917) Main: my led status = 1[0m
+[0;32mI (26917) Main: my led status = 1[0m
+[0;32mI (26917) Main: my led status = 1[0m
+[0;32mI (26917) Main: my led status = 1[0m
+[0;32mI (26927) Main: my led status = 1[0m
+[0;32mI (27017) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (27017) Main: my led status = 1[0m
+[0;32mI (27017) Main: my led status = 1[0m
+[0;32mI (27017) Main: my led status = 1[0m
+[0;32mI (27017) Main: my led status = 1[0m
+[0;32mI (27117) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (27117) Main: my led status = 1[0m
+[0;32mI (27117) Main: my led status = 1[0m
+[0;32mI (27117) Main: my led status = 1[0m
+[0;32mI (27117) Main: my led status = 1[0m
+[0;32mI (27127) Main: my led status = 1[0m
+[0;32mI (27217) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (27217) Main: my led status = 1[0m
+[0;32mI (27217) Main: my led status = 1[0m
+[0;32mI (27217) Main: my led status = 1[0m
+[0;32mI (27217) Main: my led status = 1[0m
+[0;32mI (27317) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (27317) Main: my led status = 1[0m
+[0;32mI (27317) Main: my led status = 1[0m
+[0;32mI (27317) Main: my led status = 1[0m
+[0;32mI (27317) Main: my led status = 1[0m
+[0;32mI (27487) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (27487) Main: my led status = 1[0m
+[0;32mI (27577) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (27577) Main: my led status = 1[0m
+[0;32mI (27667) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (27667) Main: my led status = 1[0m
+[0;32mI (27827) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (27827) Main: my led status = 1[0m
+[0;32mI (27917) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (27917) Main: my led status = 1[0m
+[0;32mI (27917) Main: my led status = 1[0m
+[0;32mI (27917) Main: my led status = 1[0m
+[0;32mI (27917) Main: my led status = 1[0m
+[0;32mI (27927) Main: my led status = 1[0m
+[0;32mI (28097) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (28097) Main: my led status = 1[0m
+[0;32mI (28187) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (28187) Main: my led status = 1[0m
+[0;32mI (28277) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (28277) Main: my led status = 1[0m
+[0;32mI (28367) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (28367) Main: my led status = 1[0m
+[0;32mI (28457) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (28457) Main: my led status = 1[0m
+[0;32mI (28617) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (28617) Main: my led status = 1[0m
+[0;32mI (28707) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (28707) Main: my led status = 1[0m
+[0;32mI (28797) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (28797) Main: my led status = 1[0m
+[0;32mI (28887) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (28887) Main: my led status = 1[0m
+[0;32mI (28977) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (28977) Main: my led status = 1[0m
+[0;32mI (29067) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (29067) Main: my led status = 1[0m
+[0;32mI (29157) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (29157) Main: my led status = 1[0m
+[0;32mI (29397) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (29397) Main: my led status = 1[0m
+[0;32mI (29487) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (29487) Main: my led status = 1[0m
+[0;32mI (29577) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (29577) Main: my led status = 1[0m
+[0;32mI (29667) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (29667) Main: my led status = 1[0m
+[0;32mI (29897) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (29897) Main: my led status = 1[0m
+[0;32mI (29987) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (29987) Main: my led status = 1[0m
+[0;32mI (30077) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (30077) Main: my led status = 1[0m
+[0;32mI (30167) Main: Temp: 19.0, Humi: 35.0[0m
+[0;32mI (30167) Main: my led status = 1[0m
+[0;32mI (30397) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (30397) Main: my led status = 1[0m
+[0;32mI (30487) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (30487) Main: my led status = 1[0m
+[0;32mI (30577) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (30577) Main: my led status = 1[0m
+[0;32mI (30667) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (30667) Main: my led status = 1[0m
+[0;32mI (30827) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (30827) Main: my led status = 1[0m
+[0;32mI (30917) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (30917) Main: my led status = 1[0m
+[0;32mI (30917) Main: my led status = 1[0m
+[0;32mI (30917) Main: my led status = 1[0m
+[0;32mI (30917) Main: my led status = 1[0m
+[0;32mI (31017) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (31017) Main: my led status = 1[0m
+[0;32mI (31017) Main: my led status = 1[0m
+[0;32mI (31017) Main: my led status = 1[0m
+[0;32mI (31017) Main: my led status = 1[0m
+[0;32mI (31027) Main: my led status = 1[0m
+[0;32mI (31117) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (31117) Main: my led status = 1[0m
+[0;32mI (31117) Main: my led status = 1[0m
+[0;32mI (31117) Main: my led status = 1[0m
+[0;32mI (31117) Main: my led status = 1[0m
+[0;32mI (31217) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (31217) Main: my led status = 1[0m
+[0;32mI (31217) Main: my led status = 1[0m
+[0;32mI (31217) Main: my led status = 1[0m
+[0;32mI (31217) Main: my led status = 1[0m
+[0;32mI (31227) Main: my led status = 1[0m
+[0;32mI (31317) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (31317) Main: my led status = 1[0m
+[0;32mI (31317) Main: my led status = 1[0m
+[0;32mI (31317) Main: my led status = 1[0m
+[0;32mI (31317) Main: my led status = 1[0m
+[0;32mI (31417) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (31417) Main: my led status = 1[0m
+[0;32mI (31417) Main: my led status = 1[0m
+[0;32mI (31417) Main: my led status = 1[0m
+[0;32mI (31417) Main: my led status = 1[0m
+[0;32mI (31427) Main: my led status = 1[0m
+[0;32mI (31517) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (31517) Main: my led status = 1[0m
+[0;32mI (31517) Main: my led status = 1[0m
+[0;32mI (31517) Main: my led status = 1[0m
+[0;32mI (31517) Main: my led status = 1[0m
+[0;32mI (31617) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (31617) Main: my led status = 1[0m
+[0;32mI (31617) Main: my led status = 1[0m
+[0;32mI (31617) Main: my led status = 1[0m
+[0;32mI (31617) Main: my led status = 1[0m
+[0;32mI (31627) Main: my led status = 1[0m
+[0;32mI (31717) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (31717) Main: my led status = 1[0m
+[0;32mI (31717) Main: my led status = 1[0m
+[0;32mI (31717) Main: my led status = 1[0m
+[0;32mI (31717) Main: my led status = 1[0m
+[0;32mI (31817) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (31817) Main: my led status = 1[0m
+[0;32mI (31817) Main: my led status = 1[0m
+[0;32mI (31817) Main: my led status = 1[0m
+[0;32mI (31817) Main: my led status = 1[0m
+[0;32mI (31917) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (31917) Main: my led status = 1[0m
+[0;32mI (31917) Main: my led status = 1[0m
+[0;32mI (31917) Main: my led status = 1[0m
+[0;32mI (31917) Main: my led status = 1[0m
+[0;32mI (32017) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (32017) Main: my led status = 1[0m
+[0;32mI (32017) Main: my led status = 1[0m
+[0;32mI (32017) Main: my led status = 1[0m
+[0;32mI (32017) Main: my led status = 1[0m
+[0;32mI (32117) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (32117) Main: my led status = 1[0m
+[0;32mI (32117) Main: my led status = 1[0m
+[0;32mI (32117) Main: my led status = 1[0m
+[0;32mI (32117) Main: my led status = 1[0m
+[0;32mI (32217) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (32217) Main: my led status = 1[0m
+[0;32mI (32217) Main: my led status = 1[0m
+[0;32mI (32217) Main: my led status = 1[0m
+[0;32mI (32217) Main: my led status = 1[0m
+[0;32mI (32227) Main: my led status = 1[0m
+[0;32mI (32317) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (32317) Main: my led status = 1[0m
+[0;32mI (32317) Main: my led status = 1[0m
+[0;32mI (32317) Main: my led status = 1[0m
+[0;32mI (32317) Main: my led status = 1[0m
+[0;32mI (32417) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (32417) Main: my led status = 1[0m
+[0;32mI (32417) Main: my led status = 1[0m
+[0;32mI (32417) Main: my led status = 1[0m
+[0;32mI (32417) Main: my led status = 1[0m
+[0;32mI (32427) Main: my led status = 1[0m
+[0;32mI (32517) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (32517) Main: my led status = 1[0m
+[0;32mI (32517) Main: my led status = 1[0m
+[0;32mI (32517) Main: my led status = 1[0m
+[0;32mI (32517) Main: my led status = 1[0m
+[0;32mI (32617) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (32617) Main: my led status = 1[0m
+[0;32mI (32617) Main: my led status = 1[0m
+[0;32mI (32617) Main: my led status = 1[0m
+[0;32mI (32617) Main: my led status = 1[0m
+[0;32mI (32797) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (32797) Main: my led status = 1[0m
+[0;32mI (32887) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (32887) Main: my led status = 1[0m
+[0;32mI (32977) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (32977) Main: my led status = 1[0m
+[0;32mI (33067) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (33067) Main: my led status = 1[0m
+[0;32mI (33157) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (33157) Main: my led status = 1[0m
+[0;32mI (33247) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (33247) Main: my led status = 1[0m
+[0;32mI (33337) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (33337) Main: my led status = 1[0m
+[0;32mI (33497) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (33497) Main: my led status = 1[0m
+[0;32mI (33587) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (33587) Main: my led status = 1[0m
+[0;32mI (33677) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (33677) Main: my led status = 1[0m
+[0;32mI (33767) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (33767) Main: my led status = 1[0m
+[0;32mI (33857) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (33857) Main: my led status = 1[0m
+[0;32mI (34097) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (34097) Main: my led status = 1[0m
+[0;32mI (34187) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (34187) Main: my led status = 1[0m
+[0;32mI (34277) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (34277) Main: my led status = 1[0m
+[0;32mI (34367) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (34367) Main: my led status = 1[0m
+[0;32mI (34457) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (34457) Main: my led status = 1[0m
+[0;32mI (34617) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (34617) Main: my led status = 1[0m
+[0;32mI (34707) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (34707) Main: my led status = 1[0m
+[0;32mI (34797) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (34797) Main: my led status = 1[0m
+[0;32mI (34887) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (34887) Main: my led status = 1[0m
+[0;32mI (35047) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (35047) Main: my led status = 1[0m
+[0;32mI (35137) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (35137) Main: my led status = 1[0m
+[0;32mI (35227) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (35227) Main: my led status = 1[0m
+[0;32mI (35317) Main: Temp: 19.0, Humi: 36.0[0m
+[0;32mI (35317) Main: my led status = 1[0m
+[0;32mI (35317) Main: my led status = 1[0m
+[0;32mI (35317) Main: my led status = 1[0m
+[0;32mI (35317) Main: my led status = 1[0m

@@ -1,0 +1,97 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/ty/esp/reduced_final_project/build/bootloader/esp-idf/esptool_py && /Users/ty/.espressif/python_env/idf5.1_py3.9_env/bin/python /Users/ty/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/ty/esp/reduced_final_project/build/bootloader/bootloader.bin
+Bootloader binary size 0x51c0 bytes. 0x2e40 bytes (36%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/Users/ty/esp/reduced_final_project/main/main.c: In function 'led_status_get_handler':
+/Users/ty/esp/reduced_final_project/main/main.c:600:12: warning: variable 'resp' set but not used [-Wunused-but-set-variable]
+  600 |     char * resp;
+      |            ^~~~
+/Users/ty/esp/reduced_final_project/main/main.c: At top level:
+/Users/ty/esp/reduced_final_project/main/main.c:148:19: warning: 'screen' defined but not used [-Wunused-variable]
+  148 | static lv_obj_t * screen = NULL;
+      |                   ^~~~~~
+/Users/ty/esp/reduced_final_project/main/main.c:145:13: warning: 'str' defined but not used [-Wunused-variable]
+  145 | static char str[50];
+      |             ^~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable main.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/ty/esp/reduced_final_project/build/main.bin
+[9/10] cd /Users/ty/esp/reduced_final_project/build/esp-idf/esptool_py && /Users/ty/.espressif/python_env/idf5.1_py3.9_env/bin/python /Users/ty/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/ty/esp/reduced_final_project/build/partition_table/partition-table.bin /Users/ty/esp/reduced_final_project/build/main.bin
+main.bin binary size 0xc4d50 bytes. Smallest app partition is 0x100000 bytes. 0x3b2b0 bytes (23%) free.
+[9/10] cd /Users/ty/esp/esp-idf/components/esptool_py && /opt/homebrew/Cellar/cmake/3.28.1/bin/cmake -D IDF_PATH=/Users/ty/esp/esp-idf -D "SERIAL_TOOL=/Users/ty/.espressif/python_env/idf5.1_py3.9_env/bin/python;;/Users/ty/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/ty/esp/reduced_final_project/build -P /Users/ty/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/tty.usbserial-0001 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 bootloader/bootloader.bin 0x10000 main.bin 0x8000 partition_table/partition-table.bin 0xd000 ota_data_initial.bin
+esptool.py v4.7.0
+Serial port /dev/tty.usbserial-0001
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.1)
+Features: WiFi, BLE, Embedded Flash 8MB (GD)
+Crystal is 40MHz
+MAC: f4:12:fa:9f:fc:80
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000d4fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000d000 to 0x0000efff...
+Compressed 20928 bytes to 13291...
+Writing at 0x00000000... (100 %)
+Wrote 20928 bytes (13291 compressed) at 0x00000000 in 0.6 seconds (effective 257.9 kbit/s)...
+Hash of data verified.
+Compressed 806224 bytes to 513318...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c570... (6 %)
+Writing at 0x000215c9... (9 %)
+Writing at 0x00028472... (12 %)
+Writing at 0x000354be... (15 %)
+Writing at 0x0003baf0... (18 %)
+Writing at 0x00041c1d... (21 %)
+Writing at 0x00047d88... (25 %)
+Writing at 0x0004e410... (28 %)
+Writing at 0x000540e1... (31 %)
+Writing at 0x00059dc8... (34 %)
+Writing at 0x000600c8... (37 %)
+Writing at 0x000659ed... (40 %)
+Writing at 0x0006a942... (43 %)
+Writing at 0x0006faf2... (46 %)
+Writing at 0x00074975... (50 %)
+Writing at 0x00079d74... (53 %)
+Writing at 0x0007f07d... (56 %)
+Writing at 0x00084aab... (59 %)
+Writing at 0x0008a52a... (62 %)
+Writing at 0x0008fa16... (65 %)
+Writing at 0x0009522b... (68 %)
+Writing at 0x0009ab01... (71 %)
+Writing at 0x000a0164... (75 %)
+Writing at 0x000a5b8c... (78 %)
+Writing at 0x000ab905... (81 %)
+Writing at 0x000b16b3... (84 %)
+Writing at 0x000b6b74... (87 %)
+Writing at 0x000bf393... (90 %)
+Writing at 0x000c7926... (93 %)
+Writing at 0x000cd247... (96 %)
+Writing at 0x000d2a4c... (100 %)
+Wrote 806224 bytes (513318 compressed) at 0x00010000 in 13.3 seconds (effective 485.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 154...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (154 compressed) at 0x00008000 in 0.1 seconds (effective 217.7 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0000d000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0000d000 in 0.1 seconds (effective 524.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
