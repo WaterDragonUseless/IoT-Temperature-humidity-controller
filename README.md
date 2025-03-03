@@ -1,7 +1,6 @@
 # ECE590 IoT Final Report | Spring 2024
 
-## Name: Yi Tong  
-## Net ID: yt210
+
 
 ---
 
